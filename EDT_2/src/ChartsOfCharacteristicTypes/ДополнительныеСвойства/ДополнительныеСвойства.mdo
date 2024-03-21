@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCharacteristicTypes xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e371daa9-0c94-4d32-9f42-543fff73e9c0">
+  <producedTypes>
+    <objectType typeId="a3bea805-b143-4495-b569-b123c613049e" valueTypeId="5175993b-a04e-40b1-8400-804b307d434c"/>
+    <refType typeId="d93ab7b1-c736-46d6-b7c5-79d967db9dda" valueTypeId="81df2d26-d8bc-4c64-a389-d0695659101d"/>
+    <selectionType typeId="60d5a0b5-2f23-4790-835d-f1fad7b25965" valueTypeId="b5293e13-1c2c-4736-bf6a-e4f52b7d045f"/>
+    <listType typeId="db873f6f-9c5e-4d44-b287-0f9785163db8" valueTypeId="2f37345b-19e0-4927-86fe-76bb6fbaf0a8"/>
+    <managerType typeId="0b06b045-34f8-46f8-a8d6-8dedf8259490" valueTypeId="ae362f27-fec8-4068-ba91-182427f41ce2"/>
+    <containerType typeId="cad87acf-eef4-428d-b24c-421be3eae018" valueTypeId="e6ef9d3c-cdf2-4b2f-9d70-367df96d3abf"/>
+  </producedTypes>
+  <name>ДополнительныеСвойства</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дополнительные свойства</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfCharacteristicTypes.ДополнительныеСвойства.StandardAttribute.Description</inputByString>
+  <inputByString>ChartOfCharacteristicTypes.ДополнительныеСвойства.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <characteristicExtValues>Catalog.ЗначенияСвойств</characteristicExtValues>
+  <type>
+    <types>CatalogRef.ФизическиеЛица</types>
+    <types>CatalogRef.Валюты</types>
+    <types>CatalogRef.Подразделения</types>
+    <types>Boolean</types>
+    <types>CatalogRef.ЗначенияСвойств</types>
+    <types>String</types>
+    <types>CatalogRef.КонтактныеЛица</types>
+    <types>Date</types>
+    <types>Number</types>
+    <types>CatalogRef.ЕдиницыИзмерения</types>
+    <types>CatalogRef.Склады</types>
+    <types>CatalogRef.Контрагенты</types>
+    <numberQualifiers>
+      <precision>10</precision>
+    </numberQualifiers>
+    <stringQualifiers>
+      <length>10</length>
+    </stringQualifiers>
+    <dateQualifiers>
+      <dateFractions>Date</dateFractions>
+    </dateQualifiers>
+  </type>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>25</descriptionLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:ChartOfCharacteristicTypes>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a7731bf3-9953-4982-8cc9-17e4c94edf9c">
+  <producedTypes>
+    <objectType typeId="fcc2ff0a-1e02-473a-b503-4f70313f1ad3" valueTypeId="716f88cc-c5ac-48f6-8316-4b294e0f213f"/>
+    <refType typeId="6cd22f30-b68e-43cc-8202-b56f994231b8" valueTypeId="46fa5896-cb20-490f-ada0-9fe1742a2b70"/>
+    <selectionType typeId="bf556d78-aa91-4b57-8fb7-850541631260" valueTypeId="35784bae-15da-4f24-8dfa-3a1b508d66f6"/>
+    <listType typeId="404cf8da-fe93-4ecf-95af-c9406448ab0b" valueTypeId="9f6d9a5d-e1d0-460b-9bbc-6e863918d6f9"/>
+    <managerType typeId="d89bc5f5-db3f-405e-971c-47c99673b7c0" valueTypeId="852005c3-4161-41e8-b0d2-e7cc10a8f820"/>
+  </producedTypes>
+  <name>ОказаниеУслугСервисМенеджером</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оказание услуг сервис менеджером</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ОказаниеУслугСервисМенеджером.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ОказаниеУслугСервисМенеджером.Form.ФормаДокумента</defaultObjectForm>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="dddb6f6f-d6b3-4abb-a29f-57dabd59061e">
+    <name>СервисМенеджер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сервис менеджер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="3c40eeb7-0b14-4326-81f5-7aa000ba5987">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="e4a8d6f5-5af6-45a2-a0bc-aa3ec4c4e5d2">
+    <producedTypes>
+      <objectType typeId="f1914ef3-102a-46b8-8ea3-3b3791d814c6" valueTypeId="2a817d29-8695-400e-834c-ba756ae810b3"/>
+      <rowType typeId="fd0bc6a9-7db2-4d6e-9f9d-3763951b857d" valueTypeId="9dbcec86-0eb8-4a43-a585-9950899fcf80"/>
+    </producedTypes>
+    <name>Состав</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состав</value>
+    </synonym>
+    <attributes uuid="d8471e9e-39a4-417e-9098-234ba3d39c31">
+      <name>Контрагент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Контрагент</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Контрагенты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="faa8c247-30e6-4993-80ef-25af7aa1cf4e">
+      <name>Услуга</name>
+      <synonym>
+        <key>ru</key>
+        <value>Услуга</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="580ba1c2-c27a-49ce-a014-0b4da9693417">
+      <name>ДокументОснование</name>
+      <synonym>
+        <key>ru</key>
+        <value>Документ основание</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.ПродажаТоваров</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="3f0309b0-578a-4dbf-b512-2c29f3dbccfc">
+      <name>ПланируемаяДатаВыполнения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Планируемая дата выполнения</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

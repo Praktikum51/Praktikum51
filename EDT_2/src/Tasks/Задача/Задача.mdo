@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b8df30f8-e9e3-47d9-8146-00d41212511f">
+  <producedTypes>
+    <objectType typeId="ea069c46-2919-4543-b807-3b86f2af902f" valueTypeId="005b56c7-1209-4682-a857-1e3b4824df6e"/>
+    <refType typeId="fa58d1f9-20ac-4fe4-b848-6a3ad7714a2f" valueTypeId="f5b9f87c-3884-490b-80c1-11a3f4b5c5e2"/>
+    <selectionType typeId="22b95e80-371b-4f2c-88f8-f935c4b0f590" valueTypeId="fadaece1-301f-40ba-bad8-c0b9f65b4684"/>
+    <listType typeId="efc1ecbe-f8f0-42e1-8a39-b0657d21d3f7" valueTypeId="366040c7-08ea-4e1e-9856-becff05913a4"/>
+    <managerType typeId="93c88b82-6f79-4593-af2e-ee18c857609b" valueTypeId="88fd729d-9141-42fd-975c-4aa59898b20b"/>
+  </producedTypes>
+  <name>Задача</name>
+  <synonym>
+    <key>ru</key>
+    <value>Задача</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Task.Задача.StandardAttribute.Description</inputByString>
+  <inputByString>Task.Задача.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <taskNumberAutoPrefix>DontUse</taskNumberAutoPrefix>
+  <descriptionLength>25</descriptionLength>
+  <addressing>InformationRegister.СведенияПоАдресации</addressing>
+  <mainAddressingAttribute>Task.Задача.AddressingAttribute.Сотрудник</mainAddressingAttribute>
+  <currentPerformer>SessionParameter.ТекущийПользователь</currentPerformer>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <addressingAttributes uuid="1b64abeb-ceeb-4cdd-8804-ccb2e8c7ec08">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </addressingAttributes>
+  <addressingAttributes uuid="dee49b86-1511-4098-a66f-17ccca4f273d">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Должности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </addressingAttributes>
+</mdclass:Task>

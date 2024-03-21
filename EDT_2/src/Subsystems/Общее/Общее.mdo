@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2c2f9765-d0f4-4a9f-a957-613817842d8c">
+  <name>Общее</name>
+  <synonym>
+    <key>ru</key>
+    <value>Общее</value>
+  </synonym>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Constant.НаименованиеКомпании</content>
+  <content>Constant.УчетПоСкладам</content>
+  <content>CommonForm.ПараметрыУчета</content>
+  <subsystems>Справочники</subsystems>
+  <subsystems>Журналы</subsystems>
+  <subsystems>Регистры</subsystems>
+  <subsystems>Отчеты</subsystems>
+</mdclass:Subsystem>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0160c657-208f-4ab1-b658-619d4f6906c2">
+  <name>ПланированиеОказанияУслуг</name>
+  <synonym>
+    <key>ru</key>
+    <value>Планирование оказания услуг</value>
+  </synonym>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.ПродажаТоваров</content>
+  <content>Document.ПланированиеОказанияУслуг</content>
+  <content>Document.ОказаниеУслугСервисМенеджером</content>
+</mdclass:Subsystem>

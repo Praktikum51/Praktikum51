@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cffe58c4-b48d-41c5-873f-e78c187b3ca8">
+  <producedTypes>
+    <selectionType typeId="9f50a98a-e725-44f2-953f-4b570ef6e2d8" valueTypeId="230e665e-1b02-4b2a-8c45-48dc0b940f46"/>
+    <listType typeId="fdbd11d7-589f-41e7-b4fd-312c02c088c8" valueTypeId="a4e3f4c0-190f-40e3-af88-897c646596f5"/>
+    <managerType typeId="835d8bbc-98f6-4748-ba97-9e269b4ca777" valueTypeId="b4c58275-ae28-4417-a6fe-532f5f6df1c0"/>
+    <recordSetType typeId="e6bf72fb-f986-4de3-9d72-43d1ef338087" valueTypeId="89dd4481-2882-4e13-b4cc-b39e2a641187"/>
+    <recordKeyType typeId="19d5f6dd-74d3-4e7e-8bfc-9697b3dd76d9" valueTypeId="07e34f68-e2cc-4a32-98fb-c31a12f1303f"/>
+    <recordType typeId="eb9cd04f-816f-4042-8a5b-38e6b2f983a3" valueTypeId="fe2557a0-4a79-4865-a078-224b1943bf5a"/>
+    <recordManagerType typeId="15751c5b-b8ed-4dbe-809b-2d9f3852ab31" valueTypeId="385efe90-fe5c-4205-b5d8-e0b4b389b4ed"/>
+  </producedTypes>
+  <name>СведенияПоАдресации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сведения по адресации</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="3be9a4a9-30f6-400c-bc24-d2fa51258cd9">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f7ef1be5-ecef-48c0-aca3-4da8822b26cd">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Должности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>
